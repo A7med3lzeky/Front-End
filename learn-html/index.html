@@ -1,0 +1,426 @@
+<!DOCTYPE html> <!-- doctype for Standard Mod to avoid Quirks Mod -->
+<html lang="en">
+
+<head>
+    <title>Book Store</title>
+    <meta charset="UTF-8" />
+    <!-- هي معلومات عن المعلومات meta -->
+    <!-- 
+        comment line one
+        comment line 2
+        comment line 3
+     -->
+    <meta name="description" content="This is our Book Store" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name=viewport content="width=device-width, initial-scale=1.0"> -->
+    <style>
+        body {
+            background-color: beige;
+
+        }
+    </style>
+    <script></script>
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <!--Accessibility
+        ARIA => Accessible Rich Internet Application
+    -->
+    <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">Plan One</div>
+    <label id="plan1">Plan One Label</label>
+    <div role="checkbox" tabindex="0">Plan Two</div>
+    <div role="checkbox" tabindex="0">Plan Three</div>
+
+
+    <!--
+        get => show Query string at the link
+        post => Hide Query string
+        readonly
+        disabled => readonly and not sent
+    -->
+    <form action="" method="get" novalidate target="_blank">
+        <!-- 
+        <div>
+            <label>Username</label>
+            <input type="text" required value="A7med" name="user" readonly>
+        </div>
+        <br>
+        <div>
+            <label>Subject</label>
+            <input type="text" name="Subject" autofocus>
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password" required placeholder="Write a Complex Password" name="pass" minlength="5"
+                maxlength="10">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="text" required value="ahmedelzeky64@gmail.com" placeholder="Write a Valid Email" name="mail"
+                disabled>
+        </div>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="color">
+        </div>
+        <br>
+        <div>
+            <label>Rang</label>
+            <input type="range" name="rang" min="0" max="100" step="10" value="50">
+        </div>
+        <br>
+        <div>
+            <label for="num">Number</label>
+            <input id="num" type="number" name="number" min="0" max="100" step="" value="50">
+        </div>
+        <hr>
+        <div>
+            <input id="win" type="radio" name="OP" value="Windows">
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input id="lin" type="radio" name="OP" value="Linux" checked>
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input id="mac" type="radio" name="OP" value="Mac">
+            <label for="mac">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <input id="win1" type="checkbox" name="OP" value="Windows">
+            <label for="win1">Windows</label>
+        </div>
+        <div>
+            <input id="lin1" type="checkbox" name="OP" value="Linux" checked>
+            <label for="lin1">Linux</label>
+        </div>
+        <div>
+            <input id="mac1" type="checkbox" name="OP" value="Mac">
+            <label for="mac1">Mac</label>
+        </div>
+        <br>
+        <label for="book">Choose Book</label>
+        <select name="book" id="book" multiple>
+            <optgroup label="Romantic">
+                <option value="1">Book 1</option>
+                <option value="2">Book 2</option>
+                <option value="3">Book 3</option>
+            </optgroup>
+            <optgroup label="Police">
+                <option value="4" selected>Book 4</option>
+                <option value="5">Book 5</option>
+                <option value="6">Book 6</option>
+            </optgroup>
+        </select>
+        <br>
+        <div>
+            <label for="sub">Subject Textarea</label>
+            <br>
+            <textarea name="subject" id="sub" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <input type="hidden"> 
+        -->
+        <label for="programming">Choose Programming Language</label>
+
+        <input list="programming" name="prog">
+        <datalist id="programming">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="Javascript"></option>
+            <option value="Java"></option>
+            <option value="C++"></option>
+            <option value="Scala"></option>
+        </datalist>
+        <br>
+        <input type="reset">
+        <input type="submit" value="Save">
+        <hr>
+        <!-- 
+        <div>
+            <label for="">Upload</label>
+            <input type="file">
+        </div>
+        <br>
+        <div>
+            <label for="">Search</label>
+            <input type="search">
+        </div>
+        <br>
+        <div>
+            <label for="">Url</label>
+            <input type="url">
+        </div>
+        <br>
+        <div>
+            <label for="">Date</label>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <label for="">Month</label>
+            <input type="month">
+        </div>
+        <br>
+        <div>
+            <label for="">Week</label>
+            <input type="week">
+        </div>
+        <br>
+        <div>
+            <label for="">time</label>
+            <input type="time">
+        </div>
+        <br> 
+    -->
+    </form>
+    <hr>
+    <q>This is My World</q>
+    <blockquote>This is My World</blockquote>
+    <br>
+    <div>
+        <!--
+            wbr => Word Break
+            bdi => Be Directional Isolation
+        -->
+        https://www.youtube.com/<wbr>watch?v=Lqb8dycyIw0&list=PLBsIgVvbrnc<wbr>DhUgCH6RUClfyYvcA7z51K&index=3&t=1288s
+    </div>
+    <br>
+    <p>السلام 2 welcome</p>
+    <p><bdi>السلام</bdi> 2 welcome</p>
+    <button>Click</button>
+    <hr>
+    <code>
+            var x = 10;
+            var y = 20;
+            console.log(x + y);
+        </code>
+    <pre> <!-- Pre Formatted Text  -->
+            This is 
+            Pre Formatted Text 
+            يظهر في الموقع كما تكتبه في الكود
+
+        </pre>
+    <code>
+            <pre>
+                var x = 10;
+            var y = 20;
+            console.log(x + y);
+            </pre>
+        </code>
+    <iframe title="Elzero" src="https://elzero.org/tracks/front-end/" width="800" height="400"></iframe>
+    <br>
+
+
+    <audio controls loop muted>
+        <!-- autoplay -->
+        <source src="media/Saba7k.mp3" type="audio/mpeg">
+        <source src="media/Saba7k.ogg" type="audio/ogg">
+        <source src="media/Saba7k.wav" type="audio/wav">
+        you Browser does not Support Audio Tags
+    </audio>
+    <br>
+    <video controls loop width="300" height="180" poster="Pic/DO.png">
+        <source src="media/Tal3a Albadr.mp4 " type="video/mp4">
+        <source src="media/Tal3a Albadr.ogg" type="video/ogg">
+        you Browser does not Support Audio Tags
+        <track arc="my_file_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track arc="my_file_ar.vtt" kind="subtitles" srclang="ar" label="Arabic">
+        <preload></preload>
+    </video>
+    <br>
+    <a href="https://google.com" target=_blank title="go to google">Google</a>
+    <a href="test.html" target=_blank title="go to test page">test page</a>
+    <a href="#Elzeky" title="go to Elzeky">Ahmed Elzeky Paragraph</a>
+    <a href="mailto:ahmedelzeky64@gmail.com">Contact Me</a>
+    <a href=""></a>
+    <a></a>
+    <p>his Is My <b>Book Store</b>, Welcome</p>
+    <p>his Is My <strong>Book Store</strong>, Welcome</p>
+    <p>his Is My <i>Book Store</i>, Welcome</p>
+    <p>his Is My <em>Book Store</em>, Welcome</p>
+    <p>his Is My <mark>Book Store</mark>, Welcome</p>
+    <p>his Is My <u>Book Store</u>, Welcome</p>
+    <p>his Is My <small>Book Store</small>, Welcome</p>
+    <p>his Is My Book Store, <del>Welcome</del> يامراحب</p>
+    <p>his Is My Book Store, <ins>ya Welcome</ins>Welcome</p>
+    <p id=Elzeky>Ahmed Elzeky dolor sit amet consectetur, adipisicing elit. Architecto, dolore temporibus quod dolor
+        eius error fugiat officiis, eaque saepe quam quisquam! Delectus, rerum vel non laborum assumenda expedita
+        reprehenderit at!</pid>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, dolore temporibus quod dolor eius error
+        fugiat officiis, eaque saepe quam quisquam! Delectus, rerum vel non laborum assumenda expedita reprehenderit
+        at!
+    </p>
+    <p>h<sub>2</sub>o</p>
+    <p>2<sup>3</sup> = 6</p>
+
+    <!--
+        b => Bold
+        strong => Bold => important text
+        i => Italic
+        em => Emphasized
+        mark => Highlighted Text
+        u => Underline
+        small => Smaller Text
+        del => Deleted Text
+        ins => Inserted Text
+        sub => Subscript
+        sup => Superscript
+        
+    -->
+    <p>We have a Big Sale</p>
+    <h1>Book Store</h1>
+    <h2>Book Title in Book Store</h2>
+    <h3>Chapter Title Inside Book</h3>
+    <h4>Story Title Inside Chapter</h4>
+    <h5></h5>
+    <h6></h6>
+
+    <p>This is <span>Second</span> Paragraph, <br> <!-- Break Tag -->
+        Test <br>
+        Test Again</p>
+    <hr> <!-- Horizontal Rule-->
+    <div>
+        <h1>Book Store</h1>
+        <p>his Is My <b>Book Store</b>, Welcome</p>
+    </div>
+    <div class="romantic">
+        <h3>Book Title</h3>
+        <p>Book Description</p>
+        <span>$100</span>
+    </div>
+    <hr>
+    <div class="police">
+        <h3>Book Title</h3>
+        <p>Book Description</p>
+        <span>$100</span>
+    </div>
+    <hr>
+    <div>
+        <p>HTML Entities</p>
+        <p>&lt;p&gt; &copy; &radic;</p>
+    </div>
+    <hr>
+    <div>
+        <header>Head of Website</header>
+        <img src="Semantic Elements.png" alt="" width="300">
+        <nav>link - link - link</nav>
+        <main>
+            <article></article>
+            <article></article>
+        </main>
+
+        <section></section>
+        <aside></aside>
+        <footer></footer>
+
+    </div>
+
+
+
+    <img src="Note Taking.png" alt="" width=200>
+    <br>
+    <img src="Pic/Note Taking.png" alt="" width=300>
+    <br>
+    <img src="../Note Taking.png" alt="" width=400> <!-- خارج ملف المشروع-->
+    <br>
+    <img src="soso.png" alt="Logo Testing"> <!-- يظهر النص البديل في حالة عدم ظهور الصورة لسبب ما-->
+
+</body>
+
+</html>
+
+<ul>
+    <!-- Unordered list -->
+    <li>HTML</li> <!-- list Item -->
+    <li>CSS</li>
+    <li>
+        JS
+        <ul>
+            <li>Angular</li>
+            <li>Reactjs</li>
+            <li>Vuejs</li>
+        </ul>
+
+    </li>
+</ul>
+<ol start="100">
+    <!-- ordered list -->
+    <li>One</li>
+    <li>Two</li>
+
+</ol>
+<ol type="A">
+    <!-- ordered list -->
+    <!-- A, a, I, i -->
+    <li>One</li>
+    <li>Two</li>
+
+</ol>
+<ol>
+    <!-- ordered list -->
+    <li value="50">One</li>
+    <li>Two</li>
+
+</ol>
+<ol reversed>
+    <!-- قايمة معكوسة في الترتيب-->
+    <li>name</li>
+    <li>address</li>
+    <li>id</li>
+</ol>
+<dl>
+    <!-- Description list -->
+    <dt>HTML</dt> <!-- Description Term -->
+    <dd>Language of the Web</dd> <!-- Description of the Term -->
+    <dd>the first Lan</dd>
+    <dt>CSS
+    <dd>Language of the Visual</dd>
+    <dd>the Second Lan</dd>
+    </dt>
+</dl>
+
+<!--
+    Table...
+    thead
+    tbody
+    tfoot
+    tr => Table Row
+    td => Table Data Cell
+    th => Table Header Cell
+-->
+<table border="1" cellpadding=7px>
+    <caption>Students Data</caption> <!-- Table Title-->
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <td>Gender</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ahmed</td>
+            <td>27</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Osama</td>
+            <td>28</td>
+            <td>Male</td>
+        </tr>
+    </tbody>
+    <tfoot>
+
+        <tr>
+            <td colspan=2>Number of Students</td>
+            <td>2</td>
+        </tr>
+    </tfoot>
+
+</table>
